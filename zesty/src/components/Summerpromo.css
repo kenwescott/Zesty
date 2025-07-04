@@ -1,0 +1,14 @@
+.summer-promo-navbar {
+  background-color: #64B6AC;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000;
+}
+
+.promo-text {
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}

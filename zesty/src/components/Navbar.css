@@ -1,0 +1,95 @@
+.navbar-brand {
+  font-family: 'Aboreto';
+  color: black;
+  margin-right: 3rem;
+}
+.navbar-nav .nav-link{
+  font-family: 'Roboto';
+  color: black;
+  margin-left: 2rem;
+}
+/* MegaMenu.css */
+.mega-menu {
+  width:auto;
+  left:35%;
+  right: 20%;
+  top: 100%;
+  padding: 1rem 1.5rem;
+  transform: translateX(-50%);
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-top: 1px solid #eee;
+  z-index: 999;
+}
+
+.nav-item.dropdown:hover .mega-menu {
+  display: block;
+}
+
+.mega-header {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.mega-menu ul li a {
+  display: block;
+  padding: 5px 0;
+  color: #666;
+  text-decoration: none;
+}
+
+.mega-menu ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.mega-menu .col-md-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*Stattionery dropdown*/
+
+/* MegaMenu.css */
+.mega-menu-station {
+  width:auto;
+  left:40%;
+  right:25%;
+  top: 100%;
+  padding: 1rem 1.5rem;
+  transform: translateX(-50%);
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-top: 1px solid #eee;
+  z-index: 999;
+}
+
+.nav-item.dropdown:hover .mega-menu-station {
+  display: block;
+}
+
+.mega-header {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.mega-menu-station ul li a {
+  display: block;
+  padding: 5px 0;
+  color: #666;
+  text-decoration: none;
+}
+
+.mega-menu-station ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.mega-menu-station .col-md-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
