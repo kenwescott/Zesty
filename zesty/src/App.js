@@ -6,6 +6,7 @@ import Clothing from './pages/Clothing';
 import Household from './pages/Household';
 import Stationery from './pages/Stationery';
 import Sumpromo from './components/Summerpromo';
+import ProductDetail from './pages/ProductDetail';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/clothing" element={<Clothing />} />
           <Route path="/household" element={<Household />} />
           <Route path="/stationery" element={<Stationery />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
         </Routes>
       </div>
     </Router>

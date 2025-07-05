@@ -14,7 +14,7 @@ const NavigationBar = () => {
   };
   
   return (
-    <Navbar  expand="lg" className="border-bottom" style={{backgroundColor:'#DAFFEF'}}>
+    <Navbar  expand="lg" className="border-bottom" sticky="top" style={{backgroundColor:'#DAFFEF'}}>
       <Container>
         <Navbar.Brand as={Link} to="/">Zesty</Navbar.Brand>
         <Navbar.Toggle aria-controls="main-navbar" />
@@ -32,8 +32,8 @@ const NavigationBar = () => {
                   <div className="col-md-4">
                     <h6><Link to="/clothing/men" className="mega-header">Men</Link></h6>
                     <ul className="list-unstyled">
-                      <li><Link to="/clothing/men/tshirts">T-Shirts</Link></li>
-                      <li><Link to="/clothing/men/jeans">Jeans</Link></li>
+                      <li><Link to="/clothing/men/tshirts">Tops</Link></li>
+                      <li><Link to="/clothing/men/jeans">Pants</Link></li>
                       <li><Link to="/clothing/men/jackets">Jackets</Link></li>
                     </ul>
                   </div>
@@ -44,7 +44,7 @@ const NavigationBar = () => {
                     <ul className="list-unstyled">
                       <li><Link to="/clothing/women/dresses">Dresses</Link></li>
                       <li><Link to="/clothing/women/tops">Tops</Link></li>
-                      <li><Link to="/clothing/women/jeans">Jeans</Link></li>
+                      <li><Link to="/clothing/women/jeans">Bottoms</Link></li>
                     </ul>
                   </div>
 
