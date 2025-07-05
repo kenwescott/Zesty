@@ -106,6 +106,7 @@ const NavigationBar = () => {
             {/* Cart Icon */}
             <Nav.Link as={Link} to="/cart">
               <i className="bi bi-cart fs-5"></i>
+            { /* <div className="nav-cart-count">0</div> */}
             </Nav.Link>
 
             {/* Sign Up Button */}
