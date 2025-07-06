@@ -4,7 +4,7 @@
   margin-right: 3rem;
 }
 .navbar-nav .nav-link{
-  font-family: 'Roboto';
+ 
   color: black;
   margin-left: 2rem;
 }
@@ -93,3 +93,17 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+/*cart count*/
+
+/*.nav-cart-count{
+  width:22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -45px;
+  margin-left: 5px;
+  border-radius: 11px;
+  background-color: red;
+}*/

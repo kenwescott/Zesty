@@ -1,0 +1,37 @@
+.category-card {
+  /* background-size: cover; */
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  background-size: contain ;
+  background-color: #f8f8f8;
+  background-repeat: no-repeat;
+
+}
+
+.category-card:hover {
+  transform: scale(1.01);
+}
+
+.large-card {
+  height: 100%;
+  min-height: 100px;
+  
+}
+
+.small-card {
+  height: 240px;
+}
+
+.category-label {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size:25px;
+}

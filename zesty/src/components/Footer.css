@@ -1,0 +1,15 @@
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footer {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  background-color: #5D737E;
+}

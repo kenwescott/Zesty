@@ -14,7 +14,7 @@ const NavigationBar = () => {
   };
   
   return (
-    <Navbar  expand="lg" className="border-bottom" style={{backgroundColor:'#DAFFEF'}}>
+    <Navbar  expand="lg" className="border-bottom" sticky="top" style={{backgroundColor:'#DAFFEF'}}>
       <Container>
         <Navbar.Brand as={Link} to="/">Zesty</Navbar.Brand>
         <Navbar.Toggle aria-controls="main-navbar" />
@@ -22,6 +22,7 @@ const NavigationBar = () => {
           <Nav className="me-auto">
 
             {/* Mega Menu */}
+
                       <div className="nav-item dropdown position-static">
                           <Nav.Link as={Link} to ="/clothing">
                               Clothing
@@ -51,6 +52,7 @@ const NavigationBar = () => {
             {/*          <li><Link to="/clothing/women/jeans">Jeans</Link></li>*/}
             {/*        </ul>*/}
             {/*      </div>*/}
+
 
             {/*      */}{/* Kids Section */}
             {/*      <div className="col-md-4">*/}
@@ -110,6 +112,7 @@ const NavigationBar = () => {
             {/* Cart Icon */}
             <Nav.Link as={Link} to="/cart">
               <i className="bi bi-cart fs-5"></i>
+            { /* <div className="nav-cart-count">0</div> */}
             </Nav.Link>
 
             {/* Sign Up Button */}
