@@ -2,10 +2,6 @@ import React , { useState } from 'react';
 import { Navbar, Nav, Container,Form, Button   } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import Home from './Home';
-import Clothing from './Clothing';
-import Household from './Household';
-import Stationery from './Stationery';
 
 const NavigationBar = () => {
   const [searchValue, setSearchValue] = useState('');
