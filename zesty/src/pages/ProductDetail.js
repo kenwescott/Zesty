@@ -22,9 +22,9 @@ const ProductDetail = () => {
 
   return (
     <Container className="py-5">
-      <Row>
+      <Row className="gx-1">
         {/* LEFT: Product Image */}
-        <Col md={6}>
+        <Col md={5} className="pe-md-3">
           <img
             src={product.image}
             alt={product.title}
@@ -34,7 +34,7 @@ const ProductDetail = () => {
         </Col>
 
         {/* RIGHT: Details */}
-        <Col md={6}>
+        <Col md={5} >
           <h2>{product.title}</h2>
 
           {/* Star Rating (static for now) */}

@@ -7,6 +7,7 @@ import Household from './pages/Household';
 import Stationery from './pages/Stationery';
 import Sumpromo from './components/Summerpromo';
 import ProductDetail from './pages/ProductDetail';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/products/:id" element={<ProductDetail />} />
         </Routes>
       </div>
+      <Footer/>
     </Router>
   );
 }

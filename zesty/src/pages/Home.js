@@ -2,6 +2,9 @@ import BackgroundCarousel from'../components/BackgroundCarousel';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProductCard from '../components/ProductCard';
 import products from '../Data/Products';
+import '../components/CategoryShowcase';
+import CategoryShowcase from '../components/CategoryShowcase';
+
 
 function Home() {
      // List of product IDs you want to feature on the home page
@@ -11,6 +14,8 @@ function Home() {
   const featuredProducts = products.filter(product =>
     featuredProductIds.includes(product.id)
   );
+
+
     
   return (
     <div>
@@ -30,6 +35,12 @@ function Home() {
         ))}
       </Row>
     </Container>
+    <section className="mt-5 text-center">
+        <h2>Shop by Category</h2>
+    </section>
+    
+       <CategoryShowcase/>
+
     </div>
 
   );
