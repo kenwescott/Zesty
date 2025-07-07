@@ -3,18 +3,23 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import products from '../Data/Products';
 import { Container, Row, Col, Button, Form, FloatingLabel  } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+
 import { FaStar } from "react-icons/fa"
 
 
 const ProductDetail = ({addToCart }) => {
-  const { id } = useParams();
-  const product = products.find((p) => p.id === parseInt(id));
+   const { id } = useParams();
+
+
   const [quantity, setQuantity] = useState(1);
+  const [rating, setRating] = useState(null);
+  const [rateColor, setColor] = useState(null);
+
+  const product = products.find((p) => p.id === parseInt(id));
 
   if (!product) return <p className="text-center mt-5">Product not found</p>;
 
-  // Handle counter
+  // Handlers
   const handleDecrease = () => {
     setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
   };
@@ -22,8 +27,6 @@ const ProductDetail = ({addToCart }) => {
   const handleIncrease = () => {
     setQuantity((prev) => prev + 1);
   };
-  const [rating,setRating]=useState(null);
-  const [rateColor, setColor] = useState(null);
 
   return (
     <Container className="py-5">
@@ -93,41 +96,49 @@ const ProductDetail = ({addToCart }) => {
       </Row>
 
       <Row className="mt-5">
-        <h2> Let us know what you think</h2>
-        <Col>
-        <Row>
-          <p>Star rating:</p>
-          {[...Array(5)].map((star, index) =>{
-          const currentRate= index+1
-          return (
-            <>
-            <label>
-              <input type="radio" name="rate"
+  <h2> Let us know what you think</h2>
+  <Col>
+    <p>Star rating:</p>
+    <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+      {[...Array(5)].map((star, index) => {
+        const currentRate = index + 1;
+        return (
+          <label
+            key={index}
+            style={{
+              cursor: 'pointer',
+              display: 'inline-block',
+            }}
+          >
+            <input
+              type="radio"
+              name="rate"
               value={currentRate}
-              onClick={() => setRating(currentRate)}/>
+              onClick={() => setRating(currentRate)}
+              style={{ display: 'none' }} // hide the radio button
+            />
+            <FaStar
+              size={35}
+              color={currentRate <= (rateColor || rating) ? 'yellow' : 'grey'}
+            />
+          </label>
+        );
+      })}
+    </div>
 
-              <FaStar size={35}
-              color={ currentRate <= ( rateColor|| rating) ? "yellow" : "grey"} />
-              
-            </label>
-            </>
-          
-          )
-        })}
-        </Row>
-        <FloatingLabel controlId="floatingTextarea2" label="Comments">
-        <Form.Control
-          as="textarea"
-          placeholder="Leave a comment here"
-          style={{ height: '100px' }}
-        />
-      </FloatingLabel>
-       <Button variant="primary" type="submit">
-        Submit
-      </Button>
-        
-        </Col>
-      </Row>
+    <FloatingLabel controlId="floatingTextarea2" label="Comments" style={{ marginTop: '10px' }}>
+      <Form.Control
+        as="textarea"
+        placeholder="Leave a comment here"
+        style={{ height: '100px' }}
+      />
+    </FloatingLabel>
+    <Button variant="primary" type="submit" style={{ marginTop: '10px' }}>
+      Submit
+    </Button>
+  </Col>
+</Row>
+
     </Container>
   );
 };

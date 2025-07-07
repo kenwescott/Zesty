@@ -1,26 +1,23 @@
-
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import NavigationBar from './components/Navbar';
+import Sumpromo from './components/Summerpromo';
+import Footer from './components/Footer';
+
 import Home from './pages/Home';
 import Clothing from './pages/Clothing';
 import Household from './pages/Household';
 import Stationery from './pages/Stationery';
-import Sumpromo from './components/Summerpromo';
-import ProductDetail from './pages/ProductDetail';
-import Footer from './components/Footer';
 import PenPencilPage from './pages/Pen_pencil';
 import Notebook from './pages/Notebook';
-import PaymentPage from './pages/PaymentPage'; // Import at the top
-
-// Inside <Routes>
-<Route path="/payment" element={<PaymentPage cart={cart} />} />
-
-import './App.css'
-
+import ProductDetail from './pages/ProductDetail';
 import CartPage from './pages/Cart';
+import PaymentPage from './pages/Payment';
+import Confirmation from './pages/Confirmation';
 
-import './App.css'
-import Confirmation from "./pages/Confirmation";
+import './App.css';
+
 function App() {
   const [cart, setCart] = useState([]);
 
