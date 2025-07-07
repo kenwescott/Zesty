@@ -1,46 +1,56 @@
 import React, { useState } from 'react';
-import { Card, Button, Form, Row, Col, Container, ListGroup } from 'react-bootstrap';
+import {  Table, Form,  Container,Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-function Cart({ cart }) {
-    const cartItems = cart;
+import { useNavigate } from 'react-router-dom';
+
+const CartPage = ({ cart, removeFromCart }) => {
+    const navigate = useNavigate();
+  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const handleProceedToPayment = () => {
+    navigate('/payment');
+  };
     return (
-        <Container>
+        <Container  className="py-5">
             <h2>Checkout Page</h2>
-            <ul>
-                {cartItems.map((item) => (<li>{item.title}   {item.price}</li>))}
-
-            </ul>
-            <p>Please fill out your personal information to complete your purchase. </p>
-            <Form>
-                <Form.Group className="mb-3" controlId="formFullName">
-                    <Form.Label>Full Name</Form.Label>
-                    <Form.Control type="text" placeholder="Enter full name" />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formAddress">
-                    <Form.Label>Address</Form.Label>
-                    <Form.Control type="text" placeholder="Enter address" />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formEmail">
-                    <Form.Label>Email Address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                    </Form.Text>
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formPhone">
-                    <Form.Label>Phone Number</Form.Label>
-                    <Form.Control type="tel" placeholder="Enter phone number" />
-                </Form.Group>
-
-                <Link to='/confirmation' className="btn btn-primary">
-                    Place Order
-                </Link>
-            </Form>
+          {cart.length === 0 ? (
+        <p>Your cart is empty. <Link to="/">Go shopping</Link>.</p>
+      ) : (
+        <>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Subtotal</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {cart.map(item => (
+                <tr key={item.id}>
+                  <td>{item.title}</td>
+                  <td>${item.price.toFixed(2)}</td>
+                  <td>{item.quantity}</td>
+                  <td>${(item.price * item.quantity).toFixed(2)}</td>
+                  <td>
+                    <Button variant="danger" size="sm" onClick={() => removeFromCart(item.id)}>
+                      Remove
+                    </Button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+          <h4>Total: ${total.toFixed(2)}</h4>
+           <Button variant="success" onClick={handleProceedToPayment}>
+            Proceed to Payment
+          </Button>
+        </>
+      )}
+            
         </Container>
     );
 }
 
-export default Cart;
+export default CartPage;

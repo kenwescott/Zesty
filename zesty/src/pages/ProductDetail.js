@@ -66,7 +66,7 @@ const ProductDetail = ({addToCart }) => {
 
           {/* Add to Cart Button */}
                 
-                  <Button variant="primary" size="lg" onClick={addToCart(product) }>
+                  <Button variant="primary" size="lg" onClick={() => addToCart(product, quantity)}>
                           Add to Cart
                       </Button>
         </Col>

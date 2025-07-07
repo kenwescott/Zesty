@@ -18,7 +18,7 @@ function BackgroundCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className='d-block w-100' src='/images/bureau.jpg' alt=''/>
+        <img className='d-block w-100' src='/images/fournitures.jpg' alt=''/>
         <Carousel.Caption>
           <h3>Save on stationary!</h3>
         </Carousel.Caption>
