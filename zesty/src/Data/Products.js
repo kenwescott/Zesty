@@ -6,32 +6,42 @@ const products = [
     title: 'Piloting- Gel ink pen',
     image: '/images/gelpinkpen.jpg',
     price: 19.99,
-    category:'pen',
+    category:'Stationery',
+    subcategory:'Pen',
+    material:'Plastic',
+    type:'Ballpoint',
     description: 'Set of 5 gel ink pen.',
+    reviews: [],
   },
   {
     id: 2,
     title: 'Faith-Notebook',
     image: '/images/faith_note.jpg',
-    price: 12.99,
-    category:'Notebook',
+    price: 10.99,
+    category:'Stationery',
+    subcategory:'Notebook',
     description: 'Blue hard cover notebook.',
+    reviews: [],
   },
   {
     id: 3,
     title: 'Pink planner',
     image: '/images/Business Planner Notebook Design.jpg',
-    price: 22.99,
-    category:'Notebook',
+    price: 12.99,
+    category:'Stationery',
+    subcategory:'Notebook',
     description: 'Pink business planner.',
+    reviews: [],
   },
   {
     id: 4,
     title: ' Dark woman shirt',
     image: '/images/floral lace shirt.jpg',
     price: 15.99,
-    category:'Woman shirt',
+    category:'Woman ',
+    subcategory:'Woman Shirt',
     description: 'floral lace dark shirt.',
+    reviews: [],
   },
   
   {
@@ -39,8 +49,10 @@ const products = [
     title: ' Pink gel ink pen',
     image: '/images/Pinkgel.jpg',
     price: 17.99,
-    category:'Pen',
+    category:'Stationery',
+    subcategory:'Pen',
     description: 'Set of 12 pink gel ink pen.',
+    reviews: [],
   },
 
   {
@@ -48,8 +60,10 @@ const products = [
     title: ' Brown Jean woman shirt',
     image: '/images/Brownw_shirt.jpg',
     price: 20.99,
-    category:'Woman shirt',
+    category:'Woman',
+    subcategory:'Woman Shirt',
     description: 'Brown jean shirt for summer.',
+    reviews: [],
   },
 
   {
@@ -57,8 +71,10 @@ const products = [
     title: ' Graphic T-shirt Men',
     image: '/images/christian_shirt.jpg',
     price: 15.99,
-    category:'Man shirt',
+    category:'Man',
+    subcategory:'Man shirt',
     description: 'Christian graphic T-shirt for men made 100% cotton.',
+    reviews: [],
   },
 
   {
@@ -66,8 +82,10 @@ const products = [
     title: ' Sunny woman dress',
     image: '/images/lili dress.webp',
     price: 12.99,
-    category:'Woman dress',
+    category:'Woman',
+    subcategory:'Woman dress',
     description: 'Yellow flower dress perfect for summer 70% cotton.',
+    reviews: [],
   },
 
   {
@@ -75,8 +93,10 @@ const products = [
     title: ' Loose Fit Men Cotton Jeans',
     image: '/images/loosepants.jpg',
     price: 18.99,
-    category:'Man pant',
+    category:'Man',
+    subcategory:'Man pant',
     description: 'Loose Fit Men Cotton Jeans With Slant Pockets Baggy Plain Light Blue.',
+    reviews: [],
   },
 
   {
@@ -84,8 +104,10 @@ const products = [
     title: 'Men Hoodie',
     image: '/images/men_hoodie.avif',
     price: 15.99,
-    category:'Man shirt',
+    category:'Man',
+    subcategory:'Man shirt',
     description: ' Green Polyester Men Hoodie.',
+    reviews: [],
   },
 
   {
@@ -93,17 +115,21 @@ const products = [
     title: ' White Notebook',
     image: '/images/whitebook.jpg',
     price: 15.99,
-    category:'Notebook',
+    category:'Stationery',
+    subcategory:'Notebook',
     description: 'White hardcover notebook 200 pages.',
+    reviews: [],
   },
 
   {
     id: 12,
-    title: 'Cargo Pant',
+    title: 'Cargo Pants',
     image: '/images/greycargopant.jpg',
     price: 15.99,
-    category:'Man Pant',
+    category:'Man',
+    subcategory:'Man Pant',
     description: 'Grey cargo pant for men.',
+    reviews: [],
   },
 
   {
@@ -111,17 +137,21 @@ const products = [
     title: ' Mono Ringless Agenda',
     image: '/images/agenda.jpg',
     price: 13.99,
-    category:'Notebook',
+    category:'Stationery',
+    subcategory:'Notebook',
     description: ' Mono Ringless Agenda  - Rose Gold on Jet Black Saffiano.',
+    reviews: [],
   },
 
   {
     id: 14,
-    title: ' Brooklyn man hoodie',
+    title: ' Brooklyn hoodie',
     image: '/images/SHEIN.jpg',
     price: 25.99,
-    category:'Man shirt',
+    category:'Man',
+    subcategory:'Man shirt',
     description: 'Dark green brooklyn man hoodie.',
+    reviews: [],
   },
 ];
 

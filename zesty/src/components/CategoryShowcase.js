@@ -13,7 +13,7 @@ const CategoryShowcase = () => {
         <Col md={8}>
           <div
             className="category-card large-card"
-            onClick={() => navigate('/category/clothing')}
+            onClick={() => navigate('/clothing')}
             style={{ backgroundImage: "url('/images/ASOS.jpg')" }}
           >
             <div className="category-label">Clothing</div>
@@ -26,7 +26,7 @@ const CategoryShowcase = () => {
             <Col xs={12}>
               <div
                 className="category-card small-card"
-                onClick={() => navigate('/category/household')}
+                onClick={() => navigate('/household')}
                 style={{ backgroundImage: "url('/images/bath.jpg')" }}
               >
                 <div className="category-label">Household</div>
@@ -35,7 +35,7 @@ const CategoryShowcase = () => {
             <Col xs={12}>
               <div
                 className="category-card small-card"
-                onClick={() => navigate('/category/stationery')}
+                onClick={() => navigate('/stationery')}
                 style={{ backgroundImage: "url('/images/bureau.jpg')" }}
               >
                 <div className="category-label">Stationery</div>

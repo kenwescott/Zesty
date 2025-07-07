@@ -1,40 +1,9 @@
 import React, { useState } from 'react';
 import { Card, Button, Form, Row, Col, Container, ListGroup } from 'react-bootstrap';
+import ProductCard from '../components/ProductCard';
+import products from '../Data/Products';
 
-const items = [
-    {
-        id: 1,
-        name: 'T-shirt',
-        category: 'Tops',
-        subcategory: 'T-shirt',
-        price: 19.99,
-        image: '',
-    },
-    {
-        id: 2,
-        name: 'Jeans',
-        category: 'Pants',
-        subcategory: 'Jeans',
-        price: 29.99,
-        image: '',
-    },
-    {
-        id: 3,
-        name: 'Hat',
-        category: 'Accessories',
-        subcategory: 'Hat',
-        price: 6.99,
-        image: '',
-    },
-    {
-        id: 4,
-        name: 'Boxers',
-        category: 'Underwear',
-        subcategory: 'Boxers',
-        price: 2.99,
-        image: '',
-    },
-];
+
 function Clothing() {
 
     const [searchTerm, setSearchTerm] = useState("") ;
@@ -50,38 +19,58 @@ function Clothing() {
         }
     }
 
-    const itemFilter=(item)=>{
+    const itemFilter = (item) => {
+        if (categoryFilter.length === 0) return true;
         for (const filter of categoryFilter){
-            if(item.category.toLowerCase().includes(filter)||item.subcategory.toLowerCase().includes(filter)) return true;
+            if(item.category.toLowerCase().includes(filter.toLowerCase())) return true;
         }
         return false;
     }
-    const filteredItems = items.filter( 
-        (item) => 
-            (!categoryFilter || itemFilter(item)) && 
-            item.name.toLowerCase().includes(searchTerm.toLowerCase()) 
+    const filteredItems = products.filter((item) => (itemFilter(item)) &&
+            (searchTerm === "" || item.title.toLowerCase().includes(searchTerm.toLowerCase()))
     );
+
+    //const filteredItems = products.filter(
+    //    (item) => (!categoryFilter || itemFilter(item)) &&
+    //        (searchTerm === "" || item.title.toLowerCase().includes(searchTerm.toLowerCase()))
+    //);
+  
     
     const [cart, setCart] = useState([]);
     const addToCart = (item) => setCart([...cart, item]);
-
+    
     
     return (
         <Container>
-        <Form>
-            {['checkbox', 'radio', 'test3', 'test4'].map((value) => (
-                <div key={value} className="mb-3">
-                    <Form.Check
-                        type='checkbox'
-                        id={value}
-                        label={value}
-                        value={value}
-                        onChange={(e) => editCategoryFilter(e)}
-                    />
-                </div>
-            )) }
-            </Form>
-            <h1>`${categoryFilter}`</h1>
+        <Row>
+            <Form>
+                <Form.Control
+                    type="text"
+                    placeholder="Search items..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)} // Update search term state on input change
+                />
+                    {Array.from(new Set(products.map(products => products.category))).map((value) => (
+                    <div key={value} className="mb-3">
+                        <Form.Check
+                            type='checkbox'
+                            id={value}
+                            label={value}
+                            value={value}
+                            onChange={(e) => editCategoryFilter(e)}
+                        />
+                    </div>
+                ))}
+                </Form>
+            </Row>
+            <Row> 
+                {filteredItems.map((item) => (
+                    <Col md={3} className="mb-4" key={item.id}>
+                        <ProductCard product={item} />
+                    </Col>
+
+                ))}
+            </Row>
         </Container>
     );
 }
