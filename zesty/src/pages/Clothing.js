@@ -1,78 +1,80 @@
-import React, { useState } from 'react';
-import { Card, Button, Form, Row, Col, Container, ListGroup } from 'react-bootstrap';
-import ProductCard from '../components/ProductCard';
+import React from 'react';
+import { Container, Row, Col, Breadcrumb, Accordion } from 'react-bootstrap';
 import products from '../Data/Products';
+import HorizontalProductSlider from '../components/HorizontalProductSlider';
+import { useNavigate } from 'react-router-dom';
 
+const clothingMainCategories = ['Man', 'Woman'];
 
-function Clothing() {
+const ClothingPage = () => {
+  const navigate = useNavigate();
 
-    const [searchTerm, setSearchTerm] = useState("") ;
-    const [categoryFilter, setCategoryFilter] = useState([]);
-
-    const editCategoryFilter=(e)=>{
-        const checkedID = e.target.value;
-        if(e.target.checked){
-            setCategoryFilter([...categoryFilter, checkedID]);
-        }
-        else{
-            setCategoryFilter(categoryFilter.filter(item=>item!=checkedID));
-        }
-    }
-
-    const itemFilter = (item) => {
-        if (categoryFilter.length === 0) return true;
-        for (const filter of categoryFilter){
-            if(item.category.toLowerCase().includes(filter.toLowerCase())) return true;
-        }
-        return false;
-    }
-    const filteredItems = products.filter((item) => (itemFilter(item)) &&
-            (searchTerm === "" || item.title.toLowerCase().includes(searchTerm.toLowerCase()))
+  // Filter by main clothing category (Man or Woman)
+  const getCategoryProducts = (categoryName) =>
+    products.filter(
+      (p) => p.category?.toLowerCase() === categoryName.toLowerCase()
     );
 
-    //const filteredItems = products.filter(
-    //    (item) => (!categoryFilter || itemFilter(item)) &&
-    //        (searchTerm === "" || item.title.toLowerCase().includes(searchTerm.toLowerCase()))
-    //);
-  
-    
-    const [cart, setCart] = useState([]);
-    const addToCart = (item) => setCart([...cart, item]);
-    
-    
-    return (
-        <Container>
-        <Row>
-            <Form>
-                <Form.Control
-                    type="text"
-                    placeholder="Search items..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)} // Update search term state on input change
-                />
-                    {Array.from(new Set(products.map(products => products.category))).map((value) => (
-                    <div key={value} className="mb-3">
-                        <Form.Check
-                            type='checkbox'
-                            id={value}
-                            label={value}
-                            value={value}
-                            onChange={(e) => editCategoryFilter(e)}
-                        />
-                    </div>
-                ))}
-                </Form>
-            </Row>
-            <Row> 
-                {filteredItems.map((item) => (
-                    <Col md={3} className="mb-4" key={item.id}>
-                        <ProductCard product={item} />
-                    </Col>
+  return (
+    <Container className="py-4">
+      {/* Breadcrumb */}
+      <Breadcrumb>
+        <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+        <Breadcrumb.Item active>Clothing</Breadcrumb.Item>
+      </Breadcrumb>
 
-                ))}
-            </Row>
-        </Container>
-    );
-}
+      {/* Intro */}
+      <div className="Intro-live mb-4">
+        <h2>Step up your style game</h2>
+        <p>Discover our range of clothing for men and women – modern, stylish and affordable.</p>
+      </div>
 
-export default Clothing;
+      <Row className="mt-3">
+        {/* Left: Accordion with links */}
+        <Col md={3}>
+          <h5>Explore the categories</h5>
+          <Accordion defaultActiveKey="0" alwaysOpen>
+            {clothingMainCategories.map((cat, idx) => (
+              <Accordion.Item eventKey={idx.toString()} key={cat}>
+                <Accordion.Header>{cat}</Accordion.Header>
+                <Accordion.Body>
+                  <button
+                    className="btn btn-sm btn-outline-primary"
+                    onClick={() => navigate(`/category/${cat.toLowerCase()}`)}
+                  >
+                    View {cat}
+                  </button>
+                </Accordion.Body>
+              </Accordion.Item>
+            ))}
+            <Accordion.Item eventKey="reset">
+              <Accordion.Header>All</Accordion.Header>
+              <Accordion.Body>
+                <button
+                  className="btn btn-sm btn-outline-secondary"
+                  onClick={() => navigate('/clothing')}
+                >
+                  View All
+                </button>
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </Col>
+
+        {/* Right: Horizontal sliders */}
+        <Col md={9} className="ps-md-5">
+          <HorizontalProductSlider
+            title="Men's Clothing"
+            products={getCategoryProducts('Man')}
+          />
+          <HorizontalProductSlider
+            title="Women's Clothing"
+            products={getCategoryProducts('Woman')}
+          />
+        </Col>
+      </Row>
+    </Container>
+  );
+};
+
+export default ClothingPage;

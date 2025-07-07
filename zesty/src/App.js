@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import PenPencilPage from './pages/Pen_pencil';
 import Notebook from './pages/Notebook';
 import './App.css'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 import React, { useState } from 'react';
 
 function App() {
