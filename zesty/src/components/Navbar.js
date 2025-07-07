@@ -23,7 +23,7 @@ const NavigationBar = () => {
 
             {/* Mega Menu */}
             <div className="nav-item dropdown position-static">
-              <Nav.Link className="dropdown-toggle" data-bs-toggle="dropdown">
+              <Nav.Link as={Link} to="/clothing" className="dropdown-toggle" data-bs-toggle="dropdown">
                 Clothing
               </Nav.Link>
               <div className="dropdown-menu mega-menu p-4">
@@ -62,7 +62,7 @@ const NavigationBar = () => {
             </div>
 
             <div className="nav-item dropdown position-static">
-              <Nav.Link className="dropdown-toggle" data-bs-toggle="dropdown">
+              <Nav.Link as={Link} to="/stationery" className="dropdown-toggle" data-bs-toggle="dropdown">
                 Stationery
               </Nav.Link>
               <div className="dropdown-menu mega-menu-station p-3">
@@ -70,9 +70,9 @@ const NavigationBar = () => {
                  
                   <div className="col-md-3">
                     <ul className="list-unstyled">
-                      <li><Link to="/stationery/notebooks">Notebooks</Link></li>
+                      <li><Link to="/stationery/notebook">Notebooks</Link></li>
                       <li><Link to="/stationery/paper">Paper</Link></li>
-                      <li><Link to="/stationery/pens">Pens & Pencils</Link></li>
+                      <li><Link to="/stationery/pen_pencil">Pens & Pencils</Link></li>
                     </ul>
                   </div>
                 </div>

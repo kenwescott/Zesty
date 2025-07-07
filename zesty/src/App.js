@@ -8,7 +8,9 @@ import Stationery from './pages/Stationery';
 import Sumpromo from './components/Summerpromo';
 import ProductDetail from './pages/ProductDetail';
 import Footer from './components/Footer';
-
+import PenPencilPage from './pages/Pen_pencil';
+import Notebook from './pages/Notebook';
+import './App.css'
 function App() {
   return (
     <Router>
@@ -21,6 +23,8 @@ function App() {
           <Route path="/household" element={<Household />} />
           <Route path="/stationery" element={<Stationery />} />
           <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="/stationery/pen_pencil" element={<PenPencilPage />} />
+        <Route path="/stationery/notebook" element={<Notebook />} />
         </Routes>
       </div>
       <Footer/>
