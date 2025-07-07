@@ -146,7 +146,7 @@ const Notebook = () => {
             {filteredProducts.length > 0 ? (
               filteredProducts.map((product) => (
                 <Col md={4} sm={6} xs={12} className="mb-4" key={product.id}>
-                  <ProductCard product={product} />
+                      <ProductCard product={product} />
                 </Col>
               ))
             ) : (

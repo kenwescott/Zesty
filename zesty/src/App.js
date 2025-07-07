@@ -16,10 +16,19 @@ import Cart from './pages/Cart';
 import PenPencilPage from './pages/Pen_pencil';
 import Notebook from './pages/Notebook';
 import './App.css'
-
+import Confirmation from "./pages/Confirmation";
 function App() {
     const [cart, setCart] = useState([]);
-    const addToCart = (item) => setCart([...cart, item]);
+    const inCart = (item) => {
+        for (const cartItem in cart) {
+            if (cartItem.Title === item.Title) return false;
+        }
+        return true;
+    }
+    const addToCart = (item) => {
+        if (inCart(item)) { setCart([...cart, item]) }
+    }
+        ;
   return (
     <Router>
       <Sumpromo/>
@@ -30,11 +39,11 @@ function App() {
           <Route path="/clothing" element={<Clothing />} />
           <Route path="/household" element={<Household />} />
           <Route path="/stationery" element={<Stationery />} />
-                  <Route path="/products/:id" element={<ProductDetail />} />
+                  <Route path="/products/:id" element={<ProductDetail addToCart={addToCart} />} />
                   <Route path="/cart" element={<Cart cart={cart}/> }/>
-          <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/stationery/pen_pencil" element={<PenPencilPage />} />
-        <Route path="/stationery/notebook" element={<Notebook />} />
+                  <Route path="/stationery/notebook" element={<Notebook />} />
+                  <Route path="/confirmation" element={<Confirmation />} />
         </Routes>
       </div>
       <Footer/>

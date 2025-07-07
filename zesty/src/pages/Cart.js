@@ -7,7 +7,7 @@ function Cart({ cart }) {
         <Container>
             <h2>Checkout Page</h2>
             <ul>
-                {cartItems.map((item) => (<li>${item.title}   ${item.price}</li>))}
+                {cartItems.map((item) => (<li>{item.title}   {item.price}</li>))}
 
             </ul>
             <p>Please fill out your personal information to complete your purchase. </p>
