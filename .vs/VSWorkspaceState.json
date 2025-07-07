@@ -4,8 +4,9 @@
     "\\zesty",
     "\\zesty\\src",
     "\\zesty\\src\\components",
+    "\\zesty\\src\\Data",
     "\\zesty\\src\\pages"
   ],
-  "SelectedNode": "\\zesty\\src\\pages\\Clothing.js",
+  "SelectedNode": "\\zesty\\src\\pages\\Confirmation.js",
   "PreviewInSolutionExplorer": false
 }
