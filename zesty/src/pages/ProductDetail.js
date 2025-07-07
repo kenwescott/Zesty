@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import products from '../Data/Products';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
-
-const ProductDetail = () => {
+import { Link } from 'react-router-dom';
+const ProductDetail = ({addCart }) => {
   const { id } = useParams();
   const product = products.find((p) => p.id === parseInt(id));
   const [quantity, setQuantity] = useState(1);
@@ -63,10 +63,12 @@ const ProductDetail = () => {
             </Button>
           </div>
 
-          {/* Add to Cart Button */}
-          <Button variant="primary" size="lg">
+                  {/* Add to Cart Button */}
+                  <Link to="/">
+                  <Button variant="primary" size="lg" onClick={addCart(product) }>
             Add to Cart
-          </Button>
+                  </Button>
+          </Link>
         </Col>
       </Row>
 
