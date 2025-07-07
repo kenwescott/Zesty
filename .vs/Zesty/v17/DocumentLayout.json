@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\School files\\Summer 2025\\UI\\Zesty\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\BackgroundCarousel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:zesty\\src\\components\\BackgroundCarousel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\CategoryShowcase.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:zesty\\src\\components\\CategoryShowcase.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\CategoryShowcase.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:zesty\\src\\components\\CategoryShowcase.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:zesty\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -71,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:zesty\\src\\components\\Footer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\BackgroundCarousel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:zesty\\src\\components\\BackgroundCarousel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\Summerpromo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:zesty\\src\\components\\Summerpromo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -90,24 +98,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Pen_pencil.js",
-              "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\Pen_pencil.js",
-              "RelativeDocumentMoniker": "zesty\\src\\pages\\Pen_pencil.js",
-              "ToolTip": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\Pen_pencil.js",
-              "RelativeToolTip": "zesty\\src\\pages\\Pen_pencil.js",
+              "DocumentIndex": 1,
+              "Title": "CategoryShowcase.css",
+              "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\CategoryShowcase.css",
+              "RelativeDocumentMoniker": "zesty\\src\\components\\CategoryShowcase.css",
+              "ToolTip": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\CategoryShowcase.css",
+              "RelativeToolTip": "zesty\\src\\components\\CategoryShowcase.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-07T03:26:51.71Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-07T04:04:41.93Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
+              "Title": "CategoryShowcase.js",
+              "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\CategoryShowcase.js",
+              "RelativeDocumentMoniker": "zesty\\src\\components\\CategoryShowcase.js",
+              "ToolTip": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\CategoryShowcase.js",
+              "RelativeToolTip": "zesty\\src\\components\\CategoryShowcase.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-07T04:04:35.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Notebook.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\Notebook.js",
               "RelativeDocumentMoniker": "zesty\\src\\pages\\Notebook.js",
@@ -115,12 +136,11 @@
               "RelativeToolTip": "zesty\\src\\pages\\Notebook.js",
               "ViewState": "AgIAAGYAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-07T03:14:41.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T03:14:41.885Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Confirmation.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\Confirmation.js",
               "RelativeDocumentMoniker": "zesty\\src\\pages\\Confirmation.js",
@@ -128,12 +148,11 @@
               "RelativeToolTip": "zesty\\src\\pages\\Confirmation.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-07T01:35:19.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T01:35:19.06Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Cart.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\Cart.js",
               "RelativeDocumentMoniker": "zesty\\src\\pages\\Cart.js",
@@ -141,12 +160,11 @@
               "RelativeToolTip": "zesty\\src\\pages\\Cart.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-07T01:13:05.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T01:13:05.738Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "ProductCard.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\ProductCard.js",
               "RelativeDocumentMoniker": "zesty\\src\\components\\ProductCard.js",
@@ -154,12 +172,11 @@
               "RelativeToolTip": "zesty\\src\\components\\ProductCard.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-06T23:45:02.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T23:45:02.991Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Home.css",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\Home.css",
               "RelativeDocumentMoniker": "zesty\\src\\pages\\Home.css",
@@ -167,12 +184,11 @@
               "RelativeToolTip": "zesty\\src\\pages\\Home.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-06T23:06:49.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T23:06:49.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ProductDetail.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\ProductDetail.js",
               "RelativeDocumentMoniker": "zesty\\src\\pages\\ProductDetail.js",
@@ -180,12 +196,11 @@
               "RelativeToolTip": "zesty\\src\\pages\\ProductDetail.js",
               "ViewState": "AgIAADkAAAAAAAAAAAAAAEcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-06T23:00:13.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T23:00:13.473Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Navbar.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\Navbar.js",
               "RelativeDocumentMoniker": "zesty\\src\\components\\Navbar.js",
@@ -197,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "App.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\App.js",
               "RelativeDocumentMoniker": "zesty\\src\\App.js",
@@ -210,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Stationery.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\Stationery.js",
               "RelativeDocumentMoniker": "zesty\\src\\pages\\Stationery.js",
@@ -222,7 +237,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
+              "Title": "BackgroundCarousel.js",
+              "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\BackgroundCarousel.js",
+              "RelativeDocumentMoniker": "zesty\\src\\components\\BackgroundCarousel.js",
+              "ToolTip": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\BackgroundCarousel.js",
+              "RelativeToolTip": "zesty\\src\\components\\BackgroundCarousel.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-05T17:13:33.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Pen_pencil.js",
+              "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\Pen_pencil.js",
+              "RelativeDocumentMoniker": "zesty\\src\\pages\\Pen_pencil.js",
+              "ToolTip": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\Pen_pencil.js",
+              "RelativeToolTip": "zesty\\src\\pages\\Pen_pencil.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-07T03:26:51.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Household.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\Household.js",
               "RelativeDocumentMoniker": "zesty\\src\\pages\\Household.js",
@@ -230,12 +270,11 @@
               "RelativeToolTip": "zesty\\src\\pages\\Household.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-05T17:13:05.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T17:13:05.807Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Clothing.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\Clothing.js",
               "RelativeDocumentMoniker": "zesty\\src\\pages\\Clothing.js",
@@ -243,12 +282,11 @@
               "RelativeToolTip": "zesty\\src\\pages\\Clothing.js",
               "ViewState": "AgIAAEIAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-05T17:13:03.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T17:13:03.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Home.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\Home.js",
               "RelativeDocumentMoniker": "zesty\\src\\pages\\Home.js",
@@ -256,12 +294,11 @@
               "RelativeToolTip": "zesty\\src\\pages\\Home.js",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-05T17:12:51.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T17:12:51.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "App.css",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\App.css",
               "RelativeDocumentMoniker": "zesty\\src\\App.css",
@@ -269,12 +306,11 @@
               "RelativeToolTip": "zesty\\src\\App.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-05T18:10:53.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T18:10:53.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Products.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\Data\\Products.js",
               "RelativeDocumentMoniker": "zesty\\src\\Data\\Products.js",
@@ -286,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Navbar.css",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\Navbar.css",
               "RelativeDocumentMoniker": "zesty\\src\\components\\Navbar.css",
@@ -298,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Footer.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\Footer.js",
               "RelativeDocumentMoniker": "zesty\\src\\components\\Footer.js",
@@ -310,19 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BackgroundCarousel.js",
-              "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\BackgroundCarousel.js",
-              "RelativeDocumentMoniker": "zesty\\src\\components\\BackgroundCarousel.js",
-              "ToolTip": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\BackgroundCarousel.js",
-              "RelativeToolTip": "zesty\\src\\components\\BackgroundCarousel.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-05T17:13:33.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Summerpromo.js",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\components\\Summerpromo.js",
               "RelativeDocumentMoniker": "zesty\\src\\components\\Summerpromo.js",
@@ -334,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Navbar.css",
               "DocumentMoniker": "D:\\School files\\Summer 2025\\UI\\Zesty\\zesty\\src\\pages\\Navbar.css",
               "RelativeDocumentMoniker": "zesty\\src\\pages\\Navbar.css",

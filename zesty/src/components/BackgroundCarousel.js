@@ -7,24 +7,20 @@ function BackgroundCarousel() {
       <Carousel.Item>
         <img className='d-block w-100' src='/images/sales.png' alt='50% Off'/>
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Summer Sale On Now!</h3>
+          <p>Save money with your purcheses this summer now</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img className='d-block w-100' src='/images/_Monochrome (1).png' alt=''/>
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Save on clothes!</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img className='d-block w-100' src='/images/bureau.jpg' alt=''/>
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>Save on stationary!</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
