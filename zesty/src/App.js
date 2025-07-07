@@ -10,6 +10,11 @@ import ProductDetail from './pages/ProductDetail';
 import Footer from './components/Footer';
 import PenPencilPage from './pages/Pen_pencil';
 import Notebook from './pages/Notebook';
+import PaymentPage from './pages/PaymentPage'; // Import at the top
+
+// Inside <Routes>
+<Route path="/payment" element={<PaymentPage cart={cart} />} />
+
 import './App.css'
 
 import CartPage from './pages/Cart';
@@ -54,6 +59,7 @@ function App() {
           <Route path="/stationery/pen_pencil" element={<PenPencilPage />} />
                   <Route path="/stationery/notebook" element={<Notebook />} />
                   <Route path="/confirmation" element={<Confirmation />} />
+                  <Route path="/payment" element={<PaymentPage cart={cart} />} />
         </Routes>
       </div>
       <Footer/>

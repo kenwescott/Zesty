@@ -2,8 +2,10 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import products from '../Data/Products';
-import { Container, Row, Col, Button, Form } from 'react-bootstrap';
+import { Container, Row, Col, Button, Form, FloatingLabel  } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { FaStar } from "react-icons/fa"
+
 
 const ProductDetail = ({addToCart }) => {
   const { id } = useParams();
@@ -20,6 +22,8 @@ const ProductDetail = ({addToCart }) => {
   const handleIncrease = () => {
     setQuantity((prev) => prev + 1);
   };
+  const [rating,setRating]=useState(null);
+  const [rateColor, setColor] = useState(null);
 
   return (
     <Container className="py-5">
@@ -85,6 +89,43 @@ const ProductDetail = ({addToCart }) => {
           ) : (
             <p>No reviews yet.</p>
           )}
+        </Col>
+      </Row>
+
+      <Row className="mt-5">
+        <h2> Let us know what you think</h2>
+        <Col>
+        <Row>
+          <p>Star rating:</p>
+          {[...Array(5)].map((star, index) =>{
+          const currentRate= index+1
+          return (
+            <>
+            <label>
+              <input type="radio" name="rate"
+              value={currentRate}
+              onClick={() => setRating(currentRate)}/>
+
+              <FaStar size={35}
+              color={ currentRate <= ( rateColor|| rating) ? "yellow" : "grey"} />
+              
+            </label>
+            </>
+          
+          )
+        })}
+        </Row>
+        <FloatingLabel controlId="floatingTextarea2" label="Comments">
+        <Form.Control
+          as="textarea"
+          placeholder="Leave a comment here"
+          style={{ height: '100px' }}
+        />
+      </FloatingLabel>
+       <Button variant="primary" type="submit">
+        Submit
+      </Button>
+        
         </Col>
       </Row>
     </Container>
