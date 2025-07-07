@@ -123,7 +123,7 @@ const products = [
 
   {
     id: 12,
-    title: 'Cargo Pant',
+    title: 'Cargo Pants',
     image: '/images/greycargopant.jpg',
     price: 15.99,
     category:'Man',
@@ -145,7 +145,7 @@ const products = [
 
   {
     id: 14,
-    title: ' Brooklyn man hoodie',
+    title: ' Brooklyn hoodie',
     image: '/images/SHEIN.jpg',
     price: 25.99,
     category:'Man',
