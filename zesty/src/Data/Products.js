@@ -6,7 +6,7 @@ const products = [
     title: 'Piloting- Gel ink pen',
     image: '/images/gelpinkpen.jpg',
     price: 19.99,
-    category:'pen',
+    category:'Pen',
     description: 'Set of 5 gel ink pen.',
   },
   {
@@ -30,7 +30,7 @@ const products = [
     title: ' Dark woman shirt',
     image: '/images/floral lace shirt.jpg',
     price: 15.99,
-    category:'Woman shirt',
+    category:'Womans shirt',
     description: 'floral lace dark shirt.',
   },
   
@@ -48,7 +48,7 @@ const products = [
     title: ' Brown Jean woman shirt',
     image: '/images/Brownw_shirt.jpg',
     price: 20.99,
-    category:'Woman shirt',
+    category:'Womans shirt',
     description: 'Brown jean shirt for summer.',
   },
 
@@ -57,7 +57,7 @@ const products = [
     title: ' Graphic T-shirt Men',
     image: '/images/christian_shirt.jpg',
     price: 15.99,
-    category:'Man shirt',
+    category:'Mens shirt',
     description: 'Christian graphic T-shirt for men made 100% cotton.',
   },
 
@@ -66,7 +66,7 @@ const products = [
     title: ' Sunny woman dress',
     image: '/images/lili dress.webp',
     price: 12.99,
-    category:'Woman dress',
+    category:'Womans dress',
     description: 'Yellow flower dress perfect for summer 70% cotton.',
   },
 
@@ -75,7 +75,7 @@ const products = [
     title: ' Loose Fit Men Cotton Jeans',
     image: '/images/loosepants.jpg',
     price: 18.99,
-    category:'Man pant',
+    category:'Mens pants',
     description: 'Loose Fit Men Cotton Jeans With Slant Pockets Baggy Plain Light Blue.',
   },
 
@@ -84,7 +84,7 @@ const products = [
     title: 'Men Hoodie',
     image: '/images/men_hoodie.avif',
     price: 15.99,
-    category:'Man shirt',
+    category:'Mens shirt',
     description: ' Green Polyester Men Hoodie.',
   },
 
@@ -99,10 +99,10 @@ const products = [
 
   {
     id: 12,
-    title: 'Cargo Pant',
+    title: 'Cargo Pants',
     image: '/images/greycargopant.jpg',
     price: 15.99,
-    category:'Man Pant',
+    category:'Mens pants',
     description: 'Grey cargo pant for men.',
   },
 
@@ -117,10 +117,10 @@ const products = [
 
   {
     id: 14,
-    title: ' Brooklyn man hoodie',
+    title: ' Brooklyn hoodie',
     image: '/images/SHEIN.jpg',
     price: 25.99,
-    category:'Man shirt',
+    category:'Mens shirt',
     description: 'Dark green brooklyn man hoodie.',
   },
 ];

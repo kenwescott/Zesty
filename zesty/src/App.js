@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationBar from './components/Navbar';
 import Home from './pages/Home';
@@ -8,8 +8,11 @@ import Stationery from './pages/Stationery';
 import Sumpromo from './components/Summerpromo';
 import ProductDetail from './pages/ProductDetail';
 import Footer from './components/Footer';
+import React, { useState } from 'react';
 
 function App() {
+    const [cart, setCart] = useState([]);
+    const addToCart = (item) => setCart([...cart, item]);
   return (
     <Router>
       <Sumpromo/>
