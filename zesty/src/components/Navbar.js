@@ -38,35 +38,28 @@ const NavigationBar = () => {
                     </ul>
                   </div>
 
-                      <div className="nav-item dropdown position-static">
-                          <Nav.Link as={Link} to ="/clothing">
-                              Clothing
-                          </Nav.Link>
-              <Nav.Link className="dropdown-toggle" data-bs-toggle="dropdown">
-               Clothing*
-              </Nav.Link>
-              <div className="dropdown-menu mega-menu p-4">
-               <div className="row">
-              {/* Men Section */}
-                <div className="col-md-4">
-                   <h6><Link to="/clothing/men" className="mega-header">Men</Link></h6>
-                  <ul className="list-unstyled">
-                     <li><Link to="/clothing/men/tshirts">T-Shirts</Link></li>
-                      <li><Link to="/clothing/men/jeans">Jeans</Link></li>
-                      <li><Link to="/clothing/men/jackets">Jackets</Link></li>
-                  </ul>
-                            </div>
-              
-
-            {/* Women Section */}
-                 <div className="col-md-4">
+                  {/* Women Section */}
+                  <div className="col-md-4">
                     <h6><Link to="/clothing/women" className="mega-header">Women</Link></h6>
-                   <ul className="list-unstyled">
-                     <li><Link to="/clothing/women/dresses">Dresses</Link></li>
-                     <li><Link to="/clothing/women/tops">Tops</Link></li>
-                     <li><Link to="/clothing/women/jeans">Jeans</Link></li>
+                    <ul className="list-unstyled">
+                      <li><Link to="/clothing/women/dresses">Dresses</Link></li>
+                      <li><Link to="/clothing/women/tops">Tops</Link></li>
+                      <li><Link to="/clothing/women/jeans">Bottoms</Link></li>
                     </ul>
                   </div>
+
+                  {/* Kids Section */}
+                  <div className="col-md-4">
+                    <h6><Link to="/clothing/kids" className="mega-header">Kids</Link></h6>
+                    <ul className="list-unstyled">
+                      <li><Link to="/clothing/kids/shirts">Shirts</Link></li>
+                      <li><Link to="/clothing/kids/shorts">Shorts</Link></li>
+                      <li><Link to="/clothing/kids/jackets">Jackets</Link></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div className="nav-item dropdown position-static">
               <Nav.Link as={Link} to="/stationery" className="dropdown-toggle" data-bs-toggle="dropdown">
@@ -85,13 +78,28 @@ const NavigationBar = () => {
                 </div>
               </div>
             </div>
+
             <Nav.Link as={Link} to="/household">Household</Nav.Link>
             
           </Nav>
           {/* Right-side icons */}
           <Nav className="ms-auto align-items-center gap-3">
 
-  
+            {/* Search Bar with Icon */}
+            <Form className="d-flex align-items-center" onSubmit={handleSearch}>
+              <Form.Control
+                type="search"
+                placeholder="Search"
+                className="me-2"
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
+              />
+              <i
+                className="bi bi-search fs-5"
+                role="button"
+                onClick={handleSearch}
+              ></i>
+            </Form>
             
             
 
