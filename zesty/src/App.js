@@ -19,8 +19,6 @@ import './App.css'
 
 import CartPage from './pages/Cart';
 
-import PenPencilPage from './pages/Pen_pencil';
-import Notebook from './pages/Notebook';
 import './App.css'
 import Confirmation from "./pages/Confirmation";
 function App() {
