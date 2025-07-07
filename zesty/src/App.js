@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationBar from './components/Navbar';
 import Home from './pages/Home';
@@ -8,8 +8,11 @@ import Stationery from './pages/Stationery';
 import Sumpromo from './components/Summerpromo';
 import ProductDetail from './pages/ProductDetail';
 import Footer from './components/Footer';
+import Cart from './pages/Cart';
 
 function App() {
+    const [cart, setCart] = useState([]);
+    const addToCart = (item) => setCart([...cart, item]);
   return (
     <Router>
       <Sumpromo/>
@@ -20,7 +23,8 @@ function App() {
           <Route path="/clothing" element={<Clothing />} />
           <Route path="/household" element={<Household />} />
           <Route path="/stationery" element={<Stationery />} />
-          <Route path="/products/:id" element={<ProductDetail />} />
+                  <Route path="/products/:id" element={<ProductDetail />} />
+                  <Route path="/cart" element={<Cart cart={cart}/> }/>
         </Routes>
       </div>
       <Footer/>
