@@ -10,9 +10,9 @@
 }
 /* MegaMenu.css */
 .mega-menu {
-  width:auto;
+  width:100 vw;
   left:35%;
-  right: 20%;
+  right: 25%;
   top: 100%;
   padding: 1rem 1.5rem;
   transform: translateX(-50%);

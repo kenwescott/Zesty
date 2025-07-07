@@ -48,15 +48,6 @@ const NavigationBar = () => {
                     </ul>
                   </div>
 
-                  {/* Kids Section */}
-                  <div className="col-md-4">
-                    <h6><Link to="/clothing/kids" className="mega-header">Kids</Link></h6>
-                    <ul className="list-unstyled">
-                      <li><Link to="/clothing/kids/shirts">Shirts</Link></li>
-                      <li><Link to="/clothing/kids/shorts">Shorts</Link></li>
-                      <li><Link to="/clothing/kids/jackets">Jackets</Link></li>
-                    </ul>
-                  </div>
                 </div>
               </div>
             </div>
