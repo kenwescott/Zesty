@@ -16,21 +16,23 @@ const PenPencilPage = () => {
   const [materialFilter, setMaterialFilter] = useState('');
   const [typeFilter, setTypeFilter] = useState('');
   const [priceFilter, setPriceFilter] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');  // <-- added search term state
 
   const clearFilters = () => {
     setMaterialFilter('');
     setTypeFilter('');
     setPriceFilter('');
+    setSearchTerm('');  // <-- clear search term as well
   };
 
-  // Base products
+  // Base products (pen and pencil only)
   const penPencilProducts = products.filter(
     (product) =>
       product.category.toLowerCase() === 'stationery' &&
       ['pen', 'pencil'].includes(product.subcategory?.toLowerCase())
   );
 
-  // Apply filters
+  // Apply filters + search
   const filteredProducts = penPencilProducts.filter((product) => {
     const matchesMaterial =
       !materialFilter ||
@@ -46,7 +48,11 @@ const PenPencilPage = () => {
       (priceFilter === '5to10' && product.price >= 5 && product.price <= 10) ||
       (priceFilter === 'over10' && product.price > 10);
 
-    return matchesMaterial && matchesType && matchesPrice;
+    const matchesSearch =
+      searchTerm === '' ||
+      product.title.toLowerCase().includes(searchTerm.toLowerCase());
+
+    return matchesMaterial && matchesType && matchesPrice && matchesSearch;
   });
 
   return (
@@ -73,6 +79,16 @@ const PenPencilPage = () => {
               Clear
             </Button>
           </div>
+
+          {/* Search bar */}
+          <Form.Group className="mb-3" controlId="searchTerm">
+            <Form.Control
+              type="text"
+              placeholder="Search pens & pencils..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </Form.Group>
 
           <Accordion alwaysOpen defaultActiveKey={['0', '1', '2']}>
             {/* Material */}
